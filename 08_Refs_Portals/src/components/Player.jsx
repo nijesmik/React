@@ -8,6 +8,7 @@ export default function Player() {
     const name = enteredPlayerName.current.value;
     if (name) {
       setPlayerName(() => name);
+      enteredPlayerName.current.value = '';
     }
   };
 
