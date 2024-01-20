@@ -1,3 +1,5 @@
+# React
+
 ## 이미지 저장소 `public` vs `assets`
 
 ### `public` 폴더
@@ -29,3 +31,33 @@
 `<dialog>` 요소를 사용하면 웹사이트 방문자가 키보드의 `ESC`(Escape) 키를 눌러 열린 대화창을 닫을 수 있습니다.
 
 `ESC` 키로 대화창을 닫을 때 `onReset` 함수를 트리거되도록 하려면 `<dialog>` 요소에 내장된 `onClose` 속성을 추가하고 그 값을 `onReset` 속성에 바인딩해야 합니다.
+
+# NextJS
+
+The React Framework for Production
+
+- You still write React code, you still build React components and use React features (props, state, context, ...) <br> NextJS just enhances your React apps and adds more features
+
+- Lots of built-in features (e.g. routing) that help you solve common problems & clear guidance on how to use those features
+
+- There are certain problems which you will need to solve for almost all production-ready React apps: NextJS solves those for you
+
+## Key Features & Benefits
+
+### Server-side Rendering
+
+- Automatic page pre-rendering: Great for SEO and initial load
+
+- Blending client-side and server-side: Fetch data on the server and render finished pages
+
+### File-based Routing
+
+- Define pages and routes with files and folders instead of code
+
+- Less code, less work, highly understandable
+
+### Fullstack Capabilities
+
+- Easily add backend (server-side) code to your Next / React apps
+
+- Storing data, getting data, authentication etc. can be added to your React projects
