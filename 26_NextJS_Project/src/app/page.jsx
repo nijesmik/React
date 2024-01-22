@@ -1,7 +1,3 @@
-'use client'
-
-import { useEffect, useState } from 'react';
-
 import MeetupList from '@/components/meetups/MeetupList';
 
 const DUMMY_MEETUPS = [
@@ -23,11 +19,14 @@ const DUMMY_MEETUPS = [
   },
 ];
 
-export default function HomePage() {
-  const [loadedMeetups, setLoadedMeetups] = useState([]);
-
-  useEffect(() => {
-    setLoadedMeetups(DUMMY_MEETUPS);
-  }, []);
+async function HomePage() {
+  const loadedMeetups = await loadMeetups();
   return <MeetupList meetups={loadedMeetups} />;
 }
+
+export default HomePage;
+
+export const loadMeetups = async () => {
+  //   const meetups = await fetch('https://...', { cache: 'force-cache' });
+  return DUMMY_MEETUPS;
+};
