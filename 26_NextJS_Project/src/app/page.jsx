@@ -27,6 +27,9 @@ async function HomePage() {
 export default HomePage;
 
 export const loadMeetups = async () => {
-  //   const meetups = await fetch('https://...', { cache: 'force-cache' });
+//   const meetups = await fetch('https://...', {
+//     cache: 'force-cache',
+//     next: { revalidate: 10 },
+//   });
   return DUMMY_MEETUPS;
 };
